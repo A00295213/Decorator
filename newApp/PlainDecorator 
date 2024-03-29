@@ -1,0 +1,13 @@
+
+
+public class PlainDecorator : Decorator<string>
+{
+    public PlainDecorator(Icomponent<string> component) : base(component)
+    {
+
+    }
+    public override string GetText()
+    {
+        return "Plain : " + base.GetText();
+    }
+}

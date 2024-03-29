@@ -1,0 +1,11 @@
+
+
+public class UpperCaseDecorator : Decorator<string>
+{
+    public UpperCaseDecorator(Icomponent<string> component) : base(component){}
+
+    public override string GetText()
+    {
+        return base.GetText().ToUpper();
+    }
+}

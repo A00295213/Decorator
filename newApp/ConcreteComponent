@@ -1,0 +1,9 @@
+
+
+public class ConcreteComponent : Icomponent<string>
+{
+    public string GetText()
+    {
+        return "This is string.";
+    }
+}
